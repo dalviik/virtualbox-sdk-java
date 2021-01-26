@@ -1,7 +1,3 @@
----
-title: "[en] ssh connection"
-tags: []
----
 
 ## SSH Connections
 
@@ -11,6 +7,7 @@ tags: []
 
 [](#add-user)
 ### Add new user
+---
 
 
 To add a new user inside a linux machine we have to do next commands
@@ -19,7 +16,7 @@ To add a new user inside a linux machine we have to do next commands
 
 ```sh
 sudo useradd [username]
-````
+```
 
 After add user, you have to setup a password for the user recently created.
 ```sh
@@ -34,6 +31,7 @@ sudo usermod -aG sudo [username]
 ```
 
 ### Install SSH
+---
 
 To install ssh we do throught next commands
 ```sh
@@ -63,7 +61,7 @@ sudo ufw status
 From the machine where we want to connect we also need to install ssh
 ```sh
 sudo apt-get install ssh
-````
+```
 But now we need to create our ssh keys 
 ```sh
 ssh-keygen -b 4096 -t rsa
@@ -86,6 +84,7 @@ ssh [user]@[server_or_domain]
 [](#install-jenkins)
 
 ### Install Jenkins
+---
 
 To install jenkins we follow oficial documentation at [jenkins](https://www.jenkins.io/)
 
