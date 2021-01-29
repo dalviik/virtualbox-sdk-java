@@ -2,16 +2,17 @@ pipeline {
     agent any
     
     stages {
-        stage('Assemble') {
+        stage('Build') {
             steps {
                 echo 'Assembling..'
                 sh 'ls -la'
+                sh 'touch ******.txt'
             }
             post {
                 always {
                     
                     sh 'pwd'
-                    sh 'javac '
+                    sh 'mkdir fDir'
                     
                 }
             }
